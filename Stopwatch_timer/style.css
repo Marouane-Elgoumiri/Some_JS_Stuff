@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    background: linear-gradient(25deg, rgb(0, 0, 0), rgb(212, 79, 79), rgb(253, 181, 181) 60%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    background-color: #ededed;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 1.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.title{
+    font-family: 'Roboto';
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.stopwatch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.timer{
+    font-size: 40px;
+    background-color:rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 12px rgb(0, 0, 0, 0.1);
+    animation: pulse 1.5s infinite alternate;
+}
+.controls{
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 10px;
+
+}
+button{
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 1.2);
+    color: red;
+}
+
+.lap-title{
+    font-size: 1.5rem;
+
+}
+.laps{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+    overflow-y: auto;
+    max-height: 200px;
+    background-color: #d1d1d1;
+    border-radius: 10px;
+}
+li{
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+li:last-child{
+    border-bottom:none;
+
+}
+li span{
+    font-weight: 700;
+}
+
+@keyframes pulse{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.05);
+    }
+}
+.timer span{
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+}

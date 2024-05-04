@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch timer App</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Stopwatch Timer</h1>
+        <div class="stopwatch">
+            <div class="timer">
+                <span id="minutes">00</span>:
+                <span id="seconds">00</span>:
+                <span id="milliseconds">00</span>
+            </div>
+            <div class="controls">
+                <button onclick="start()" id="startBtn">Start</button>
+                <button onclick="start()" id="StopBtn">Lap</button>
+                <button onclick="start()" id="PauseBtn">Pause</button>
+                <button onclick="start()" id="ResetBtn">Reset</button>
+            </div>
+            <div class="laps">
+                <h2 class="lap-title">Lap timer</h2>
+                <ul id="laplist"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
