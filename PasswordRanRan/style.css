@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgb(89, 89, 216), rgb(188, 73, 188));
+}
+
+.container{
+    max-width: 500px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 40px 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 5px 15px rgb(0, 0, 0);
+}
+
+.container h1 {
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 36px;
+    color: #333;
+    text-decoration: underline;
+}
+.inputBox{
+    position: relative;
+    margin-bottom: 10px;
+
+}
+.inputBox span{
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    color:#333;
+    cursor:pointer;
+    margin-bottom: 5px;
+}
+
+.passbox{
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: rgb(237, 237, 237);
+    color: #333;
+    outline: none;
+}
+.genBtn{
+    margin-top: 2rem;
+    width: 100%;
+    padding: 12px 0px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);   
+    background:  linear-gradient(to left, rgb(89, 89, 216), rgb(188, 73, 188)); 
+}
+.genBtn:hover{
+    box-shadow: 1px 2px 10px #333;
+    color: blueviolet;
+    background: white;
+}
+put[type="range"]{
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+#sliderValue{
+    margin-right: 7px;
+
+}
+.pass-indicator{
+    width: 100%;
+    height: 4px;
+    position: relative;
+    background: whitesmoke;
+    border-radius: 25px;
+
+}
+
+.pass-indicator::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 50%;
+    border-radius: inherit;
+    transition: width 1.3s ease;
+}
+
+.pass-indicator.weak::before{
+    width: 20%;
+    background-color: red;
+}.pass-indicator.medium::before{
+    width: 50%;
+    background-color: rgb(190, 181, 5);
+}.pass-indicator.strong::before{
+    width: 100%;
+    background-color: rgb(0, 137, 55);
+}
