@@ -60,7 +60,7 @@ body{
     outline: none;
 }
 .genBtn{
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     width: 100%;
     padding: 12px 0px;
     border: none;
@@ -76,13 +76,13 @@ body{
     background: white;
 }
 put[type="range"]{
-    width: 100%;
+    width: 90%;
     margin-top: 10px;
 
 }
 
 #sliderValue{
-    margin-right: 7px;
+    margin-right: 10px;
 
 }
 .pass-indicator{
