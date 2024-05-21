@@ -9,3 +9,4 @@
 ![GIF](https://media.giphy.com/media/SvFocn0wNMx0iv2rYz/giphy.gif)
 
 </div>
+### Simple JS mini project to level up
